@@ -37,7 +37,7 @@ end
 end
 
 20.times do 
-    Gossip.create(content: Faker::Lorem.words(number: 7).join(" "), user: User.all[rand(0..9)])
+    Gossip.create(content: Faker::Lorem.words(number: 7).join(" "), user: User.all[rand(0..9)], title: Faker::Lorem.words(number: 3).join(" "))
     puts "new Gossip"
 end
 
